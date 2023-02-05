@@ -52,6 +52,9 @@
             remain: course,
         };
         var tag = name;
+        send(data, tag, course);
+        }
+        function send(data, tag, course) {
         $.ajax({
             // 這邊用get type
             type: "get",
